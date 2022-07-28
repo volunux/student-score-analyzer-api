@@ -18,6 +18,7 @@ Api Url is **(Student Score Analyzer)[https://desolate-harbor-08314.herokuapp.co
 **_{id}_ is a placeholder or variable that should be replace with an Long value during request**
 
 #### Student Sample JSON	
+NB: {id} will be replace by student Id for Student Entity
 
 | Route                   | Http Method    | Description            | Sample Body                           | Options      |
 | ----------------------- | -------------- | ---------------------- | ------------------------------------- | -----------  |
@@ -30,7 +31,8 @@ Api Url is **(Student Score Analyzer)[https://desolate-harbor-08314.herokuapp.co
 | api/v1/student/remove/many | PUT         | Remove some record         | {"ids": [1, 2, 3]} |               |
 
 
-#### Subject Sample JSON	
+#### Subject Sample JSON
+NB: {id} will be replace by subject Id for Subject Entity	
 
 | Route                   | Http Method    | Description            | Sample Body                           | Options      |
 | ----------------------- | -------------- | ---------------------- | ------------------------------------- | -----------  |
@@ -43,7 +45,8 @@ Api Url is **(Student Score Analyzer)[https://desolate-harbor-08314.herokuapp.co
 | api/v1/subject/remove/many | PUT         | Remove some record     | {"ids": [1, 2, 3]} |               |
 
 
-#### Score Sample JSON	
+#### Score Sample JSON
+NB: {id} will be replace by student Id from Student Entity
 
 | Route                   | Http Method    | Description            | Sample Body                           | Options      |
 | ----------------------- | -------------- | ---------------------- | ------------------------------------- | -----------  |
