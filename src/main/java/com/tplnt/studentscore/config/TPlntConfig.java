@@ -51,7 +51,7 @@ public class TPlntConfig implements WebMvcConfigurer {
 
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedOrigins(env.getProperty("front-end-url")).allowedMethods("GET", "POST", "PUT", "DELETE").allowedHeaders("*");
+		registry.addMapping("/**").allowedOrigins("*").allowedMethods("GET", "POST", "PUT", "DELETE").allowedHeaders("*");
 	}
 	
 	@Bean
