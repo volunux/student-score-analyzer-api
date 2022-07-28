@@ -1,0 +1,47 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tplnt
+    username: postgres
+    password: 12345
+    hikari:
+      maximum-pool-size: 10
+      auto-commit: true
+      connection-timeout: 20000
+      driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+    hibernate:
+      ddl-auto: update
+  cloud:
+    config:
+      import-check:
+        enabled: false
+    service-registry:
+      auto-registration:
+        enabled: false
+
+eureka:
+  client:
+    enabled: false
+    
+        
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
+
+api-base-path: /api/v1
