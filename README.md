@@ -2,7 +2,7 @@
 
 An Spring Boot REST api that calculates student results in various subjects and retrieve the mean, median and mode score and send to an Angular app at https://student-score-analyzer.vercel.app/ 
 
-### API can be previewed at 
+### API can be previewed at
 
 https://desolate-harbor-08314.herokuapp.com/api/v1/
 
@@ -11,7 +11,8 @@ https://desolate-harbor-08314.herokuapp.com/api/v1/
 https://github.com/volunux/student-score-analyzer
 
 #### List of API Route and Definition
-**NOTE:** All Request should have an Accepts and Content-Type header with the value application/json
+**NOTE:** All Request should have an Accepts and Content-Type header with the value application/json and some
+Also API might take time to respond due to hibernation and idleness. API is hosted with Heroku.
 
 Api Url is **(Student Score Analyzer)[https://desolate-harbor-08314.herokuapp.com/api/v1/]**
 
