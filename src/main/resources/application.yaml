@@ -45,3 +45,4 @@ logging:
             sql: trace
 
 api-base-path: /api/v1
+front-end-url: https://vercel.com/volunux/student-score-analyzer
