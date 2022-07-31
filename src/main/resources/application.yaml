@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://ec2-44-206-214-233.compute-1.amazonaws.com:5432/d8gsebqpodtflc
-    username: soyyhudsrejqta
-    password: daf0f0973bd5e30e01627f7413958ed6a06c3571ef48a47be6a16f4bc545a039
+    url: jdbc:postgresql://localhost:5432/tplnt
+    username: postgres
+    password: 12345
     hikari:
       maximum-pool-size: 10
       auto-commit: true
